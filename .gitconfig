@@ -1,0 +1,72 @@
+[user]
+	email = rwessel@pebblepost.com
+	name = Ryan Wessel
+[alias]
+	a = add
+	cfg = config
+	c = commit
+	ps = push
+	rb = rebase
+	mg = merge
+	ch = checkout
+	rs = reset
+	rl = reflog
+	s = status
+	cfg = config
+	f = fetch
+	b = branch
+	prune = git remote update origin --prune
+	resetLastCommit = reset --soft HEAD^
+	
+	# Git Commit.
+	cap = "!f() { git commit -m \"$@\"; }; f"
+
+	# NEW.
+	new = "!f() { git cap \"📦 NEW: $@\"; }; f"
+	# IMPROVE.
+	imp = "!f() { git cap \"👌 IMPROVE: $@\"; }; f"
+	# FIX.
+	fix = "!f() { git cap \"🐛 FIX: $@\"; }; f"
+	# RELEASE.
+	rlz = "!f() { git cap \"🚀 RELEASE: $@\"; }; f"
+	# DOC.
+	doc = "!f() { git cap \"📖 DOC: $@\"; }; f"
+	# TEST.
+	tst = "!f() { git cap \"✅ TEST: $@\"; }; f"
+	# HOTFIX
+	hot = "!f() { git cap \"🔥 HOTFIX: $@\"; }; f"
+
+	# FIND ASSIGNEES BASED ON # OF LINES CHANGED PER AUTHOR FOR ALL FILES TOUCHED BY THE PROVIDED BRANCH.
+	assignees = "!f() { \
+		git diff --name-only $1 origin/develop | \
+		xargs -n1 git blame --line-porcelain | \
+		grep \"^author \" | \
+		sort | \
+		uniq -c | \
+		sort -nr; \
+	}; f"
+
+	# FIND COUNT OF LINES OF CODE PER PROJECT CONTRIBUTOR
+	contributors = "!f() { \
+		git ls-files | \
+		xargs -n1 git blame --line-porcelain | \
+		grep \"^author \" | \
+		sort | uniq -c | sort -nr; \
+	}; f"
+
+[core]
+	excludesfile = /Users/ryanwessel/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/ryanwessel/.stCommitMsg
+[pager]
+	branch = false
+	diff = false
+	blame = false
+[diff]
+	guitool = opendiff
