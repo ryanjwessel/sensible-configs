@@ -48,7 +48,7 @@
 
 	# FIND COUNT OF LINES OF CODE PER PROJECT CONTRIBUTOR
 	contributors = "!f() { \
-		git ls-files -- 'src/*' ':!:src/__mocks__/*' | \
+		git ls-files -- 'src/*' ':!:src/__mocks__/*' ':!:.snap' | \
 		xargs -n1 git blame --line-porcelain | \
 		grep \"^author-mail \" | \
 		sort | uniq -c | sort -nr; \
