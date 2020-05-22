@@ -32,9 +32,9 @@
 	# DOC.
 	doc = "!f() { git cap \"📖 DOC: $@\"; }; f"
 	# TEST.
-	tst = "!f() { git cap \"✅ TEST: $@\"; }; f"
-	# HOTFIX
-	hot = "!f() { git cap \"🔥 HOTFIX: $@\"; }; f"
+        tst = "!f() { git cap \"🤖  TEST: $@\"; }; f"
+        # BREAKING CHANGE.
+        brk = "!f() { git cap \"‼️ BREAKING: $@\"; }; f"
 
 	# FIND ASSIGNEES BASED ON # OF LINES CHANGED PER AUTHOR FOR ALL FILES TOUCHED BY THE PROVIDED BRANCH.
 	assignees = "!f() { \
