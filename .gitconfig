@@ -17,24 +17,28 @@
 	b = branch
 	prune = git remote update origin --prune
 	resetLastCommit = reset --soft HEAD^
-	
-	# Git Commit.
-	cap = "!f() { git commit -m \"$@\"; }; f"
 
-	# NEW.
-	new = "!f() { git cap \"📦 NEW: $@\"; }; f"
-	# IMPROVE.
-	imp = "!f() { git cap \"👌 IMPROVE: $@\"; }; f"
-	# FIX.
-	fix = "!f() { git cap \"🐛 FIX: $@\"; }; f"
-	# RELEASE.
-	rlz = "!f() { git cap \"🚀 RELEASE: $@\"; }; f"
-	# DOC.
-	doc = "!f() { git cap \"📖 DOC: $@\"; }; f"
-	# TEST.
+        # Local Log (Ex. 'git ll master' shows git log for only that branch)
+        # i.e. it will not show commits from branches that are merged into this one.
+        ll = "!f() { git log --graph --abbrev-commit --decorate  --first-parent ${1}; }; f"
+
+        # Git Commit.
+        cap = "!f() { git commit -m \"$@\"; }; f"
+
+        # NEW.
+        new = "!f() { git cap \"📦  NEW: $@\"; }; f"
+        # IMPROVE.
+        imp = "!f() { git cap \"👌  IMPROVE: $@\"; }; f"
+        # FIX.
+        fix = "!f() { git cap \"🐛  FIX: $@\"; }; f"
+        # RELEASE.
+        rlz = "!f() { git cap \"🚀  RELEASE: $@\"; }; f"
+        # DOC.
+        doc = "!f() { git cap \"📖  DOC: $@\"; }; f"
+        # TEST.
         tst = "!f() { git cap \"🤖  TEST: $@\"; }; f"
         # BREAKING CHANGE.
-        brk = "!f() { git cap \"‼️ BREAKING: $@\"; }; f"
+        brk = "!f() { git cap \"‼️ BREAKING: $@\"; }; f"	
 
 	# FIND ASSIGNEES BASED ON # OF LINES CHANGED PER AUTHOR FOR ALL FILES TOUCHED BY THE PROVIDED BRANCH.
 	assignees = "!f() { \
