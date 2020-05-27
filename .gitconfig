@@ -18,9 +18,12 @@
 	prune = git remote update origin --prune
 	resetLastCommit = reset --soft HEAD^
 
-        # Local Log (Ex. 'git ll master' shows git log for only that branch)
+        # Local Graph Log (Ex. 'git localGraph master' shows git log for only that branch)
         # i.e. it will not show commits from branches that are merged into this one.
-        ll = "!f() { git log --graph --abbrev-commit --decorate  --first-parent ${1}; }; f"
+        localGraph = "!f() { git log --graph --abbrev-commit --decorate  --first-parent ${1}; }; f"
+
+        # Global Graph Log (Ex. 'git graph master' shows git log for that branch and all branches that are merged into master)
+        graph = "!f() { git log --graph --abbrev-commit --decorate ${1}; }; f"
 
         # Git Commit.
         cap = "!f() { git commit -m \"$@\"; }; f"
