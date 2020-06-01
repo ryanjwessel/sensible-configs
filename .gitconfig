@@ -74,6 +74,7 @@
 
 [core]
 	excludesfile = /Users/ryanwessel/.gitignore_global
+	pager = cat
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -82,11 +83,5 @@
 	trustExitCode = true
 [commit]
 	template = /Users/ryanwessel/.stCommitMsg
-[pager]
-	branch = false
-	diff = false
-	blame = false
-	tag = false
-	stash = false
 [diff]
 	guitool = opendiff
