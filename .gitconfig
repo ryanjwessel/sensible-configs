@@ -75,6 +75,8 @@
 [core]
 	excludesfile = /Users/ryanwessel/.gitignore_global
 	pager = cat
+[pager]
+	log = less
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
