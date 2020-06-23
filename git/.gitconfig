@@ -18,16 +18,19 @@
 	prune = git remote update origin --prune
 	resetLastCommit = reset --soft HEAD^
 
-        # Local Graph Log (Ex. 'git localGraph master' shows git log for only that branch)
+
+	## Branching Visualization Shortcuts
+        # Local Graph Log
+	# (Ex. 'git localGraph master' shows git log for only that branch)
         # i.e. it will not show commits from branches that are merged into this one.
         localGraph = "!f() { git log --graph --abbrev-commit --decorate  --first-parent ${1}; }; f"
-
-        # Global Graph Log (Ex. 'git graph master' shows git log for that branch and all branches that are merged into master)
+        # Global Graph Log
+	# (Ex. 'git graph master' shows git log for that branch and all branches that are merged into master)
         graph = "!f() { git log --graph --abbrev-commit --decorate ${1}; }; f"
 
-        # Git Commit.
-        cap = "!f() { git commit -m \"$@\"; }; f"
 
+        ## Emoji-Log Functions (https://github.com/ahmadawais/Emoji-Log)
+        cap = "!f() { git commit -m \"$@\"; }; f"
         # NEW.
         new = "!f() { git cap \"📦  NEW: $@\"; }; f"
         # IMPROVE.
@@ -43,9 +46,10 @@
         # BREAKING CHANGE.
         brk = "!f() { git cap \"‼️ BREAKING: $@\"; }; f"	
 
-	# FIND ASSIGNEES BASED ON # OF LINES CHANGED PER AUTHOR FOR ALL FILES TOUCHED BY THE PROVIDED BRANCH.
+	## Contribution History Utilities 
+	# Find assignees for code review based on # of lines changed per author for all changed files in the current branch.	
 	assignees = "!f() { \
-		git diff --name-only $1 origin/develop | \
+		git diff --name-only $1 origin/master | \
 		xargs -n1 git blame --line-porcelain | \
 		grep \"^author \" | \
 		sort | \
@@ -53,7 +57,7 @@
 		sort -nr; \
 	}; f"
 
-	# FIND COUNT OF LINES OF CODE PER PROJECT CONTRIBUTOR
+	# Find line count per contributor excl. mocks and snapshot files in the src directory
 	contributors = "!f() { \
 		git ls-files -- 'src/*' ':!:src/__mocks__/*' ':!:.snap' | \
 		xargs -n1 git blame --line-porcelain | \
@@ -77,12 +81,6 @@
 	pager = cat
 [pager]
 	log = less
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [commit]
 	template = /Users/ryanwessel/.stCommitMsg
 [diff]
