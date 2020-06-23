@@ -1,3 +1,4 @@
 # Ignore vim-plugin and installed vim dependencies
-vim/.vim/autoload/**/*
-vim/.vim/plugged/**/*
+vim/.vim/**/*
+!vim/.vimrc
+!vim/.vim/plugins.vim
