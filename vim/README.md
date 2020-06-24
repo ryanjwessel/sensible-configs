@@ -1,4 +1,4 @@
-# Vim
+# Vim Instructions
 
 The files in this directory belong in your $HOME directory.
 
