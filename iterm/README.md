@@ -1,6 +1,6 @@
 # iTerm Instructions
 
-This only contains themes at the moment. I have made some customizations with my tabs and status bar, but I am not sure how those could be imported from a file (if at all).
+This file contains a config file in the `iterm_config` directory that can be imported directly by iTerm. This can be set by going to `Preferences > General > Preferences` and setting "Load preferences from a custom directory or URL" to the `iterm_config` directory (or this GitHub URL, I haven't tried that).
 
 ## Install Themes
 
