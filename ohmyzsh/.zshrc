@@ -14,7 +14,7 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$GRADLE_HOME/bin
 
-PROMPT='%B(%~)%b $ '
+PROMPT="%B(%~)%b "$'\n'"> "
 
 # Custom scripts
 source ~/.zsh_scripts
