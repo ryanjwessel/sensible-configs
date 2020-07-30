@@ -2546,6 +2546,34 @@
 								<integer>0</integer>
 								<key>auto-rainbow style</key>
 								<integer>0</integer>
+								<key>background color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.16862745583057404</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.11372549086809158</real>
+									<key>Red Component</key>
+									<real>0.10980392247438431</real>
+								</dict>
+								<key>default text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.92941176891326904</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.92941176891326904</real>
+									<key>Red Component</key>
+									<real>0.92941176891326904</real>
+								</dict>
+								<key>font</key>
+								<string>DankMono-Regular 12</string>
 								<key>remove empty components</key>
 								<false/>
 							</dict>
@@ -2613,9 +2641,9 @@
 	<key>NoSyncLastOSVersion</key>
 	<string>Version 10.15.6 (Build 19G73)</string>
 	<key>NoSyncLastTipTime</key>
-	<real>617030709.29538798</real>
+	<real>617635832.62946904</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>27</integer>
+	<integer>29</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -3368,11 +3396,14 @@
 	<integer>0</integer>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>614694086.54374194</real>
+	<key>NoSyncTipsDisabled</key>
+	<true/>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>0004</string>
 		<string>0000</string>
 		<string>0010</string>
+		<string>0014</string>
 		<string>0007</string>
 		<string>0003</string>
 		<string>0013</string>
@@ -3385,7 +3416,7 @@
 		<string>0001</string>
 		<string>0011</string>
 		<string>0008</string>
-		<string>0014</string>
+		<string>0015</string>
 	</array>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
@@ -3441,7 +3472,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-07-27T13:19:52Z</date>
+	<date>2020-07-28T13:22:40Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
