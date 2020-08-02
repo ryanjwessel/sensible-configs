@@ -20,7 +20,7 @@ PROMPT="%B(%~)%b "$'\n'"⚡️ "
 source ~/.zsh_scripts
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/rwessel/.oh-my-zsh"
+export ZSH="/Users/ryanjwessel/.oh-my-zsh"
 
 # History
 export HISTSIZE=25000
