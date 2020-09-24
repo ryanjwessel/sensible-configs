@@ -1,5 +1,9 @@
 good_morning() {
-	cd /Applications/ && open Google\ Chrome.app && open Slack.app && open TickTick.app && cd ~/_dev
+	cd /Applications/ && open Google\ Chrome.app && open Slack.app && open TickTick.app && open Fyde.app && cd ~/_dev
+}
+
+init_branch() {
+	npm i && npm run install-native
 }
 
 rndebugger() {
