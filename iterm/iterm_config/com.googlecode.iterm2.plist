@@ -2389,13 +2389,13 @@
 						<key>Alpha Component</key>
 						<real>1</real>
 						<key>Blue Component</key>
-						<real>0.500579833984375</real>
+						<real>0.066666670143604279</real>
 						<key>Color Space</key>
 						<string>sRGB</string>
 						<key>Green Component</key>
-						<real>0.500579833984375</real>
+						<real>0.066666670143604279</real>
 						<key>Red Component</key>
-						<real>0.500579833984375</real>
+						<real>0.066666670143604279</real>
 					</dict>
 					<key>default text color</key>
 					<dict>
@@ -2411,7 +2411,7 @@
 						<real>0.92941176891326904</real>
 					</dict>
 					<key>font</key>
-					<string>DankMono-Regular 12</string>
+					<string>DankMono-Regular 14</string>
 					<key>remove empty components</key>
 					<false/>
 				</dict>
@@ -2440,13 +2440,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.500579833984375</real>
+									<real>0.066666670143604279</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.500579833984375</real>
+									<real>0.066666670143604279</real>
 									<key>Red Component</key>
-									<real>0.500579833984375</real>
+									<real>0.066666670143604279</real>
 								</dict>
 								<key>default text color</key>
 								<dict>
@@ -2462,7 +2462,7 @@
 									<real>0.92941176891326904</real>
 								</dict>
 								<key>font</key>
-								<string>DankMono-Regular 12</string>
+								<string>DankMono-Regular 14</string>
 								<key>remove empty components</key>
 								<false/>
 							</dict>
@@ -2491,13 +2491,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.500579833984375</real>
+									<real>0.066666670143604279</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.500579833984375</real>
+									<real>0.066666670143604279</real>
 									<key>Red Component</key>
-									<real>0.500579833984375</real>
+									<real>0.066666670143604279</real>
 								</dict>
 								<key>default text color</key>
 								<dict>
@@ -2513,7 +2513,7 @@
 									<real>0.92941176891326904</real>
 								</dict>
 								<key>font</key>
-								<string>DankMono-Regular 12</string>
+								<string>DankMono-Regular 14</string>
 								<key>remove empty components</key>
 								<false/>
 							</dict>
@@ -2542,13 +2542,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.500579833984375</real>
+									<real>0.066666670143604279</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.500579833984375</real>
+									<real>0.066666670143604279</real>
 									<key>Red Component</key>
-									<real>0.500579833984375</real>
+									<real>0.066666670143604279</real>
 								</dict>
 								<key>default text color</key>
 								<dict>
@@ -2564,7 +2564,7 @@
 									<real>0.92941176891326904</real>
 								</dict>
 								<key>font</key>
-								<string>DankMono-Regular 12</string>
+								<string>DankMono-Regular 14</string>
 								<key>remove empty components</key>
 								<false/>
 							</dict>
@@ -2591,13 +2591,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.500579833984375</real>
+									<real>0.066666670143604279</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.500579833984375</real>
+									<real>0.066666670143604279</real>
 									<key>Red Component</key>
-									<real>0.500579833984375</real>
+									<real>0.066666670143604279</real>
 								</dict>
 								<key>default text color</key>
 								<dict>
@@ -2613,7 +2613,7 @@
 									<real>0.92941176891326904</real>
 								</dict>
 								<key>font</key>
-								<string>DankMono-Regular 12</string>
+								<string>DankMono-Regular 14</string>
 								<key>remove empty components</key>
 								<false/>
 							</dict>
@@ -2648,13 +2648,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.500579833984375</real>
+									<real>0.066666670143604279</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.500579833984375</real>
+									<real>0.066666670143604279</real>
 									<key>Red Component</key>
-									<real>0.500579833984375</real>
+									<real>0.066666670143604279</real>
 								</dict>
 								<key>default text color</key>
 								<dict>
@@ -2670,7 +2670,7 @@
 									<real>0.92941176891326904</real>
 								</dict>
 								<key>font</key>
-								<string>DankMono-Regular 12</string>
+								<string>DankMono-Regular 14</string>
 								<key>remove empty components</key>
 								<false/>
 							</dict>
