@@ -2755,6 +2755,8 @@
 	<true/>
 	<key>ShowPaneTitles</key>
 	<false/>
+	<key>ShowTimestampsByDefault</key>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
