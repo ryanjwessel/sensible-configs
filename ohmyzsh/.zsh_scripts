@@ -1,5 +1,5 @@
 good_morning() {
-	cd /Applications/ && open Google\ Chrome.app && open Slack.app && open TickTick.app && open Fyde.app && cd ~/_dev/react-mobile
+	cd /Applications/ && open Google\ Chrome.app && open Slack.app && open Todoist.app && open Fyde.app && cd ~/_dev/react-mobile
 }
 
 init_branch() {
