@@ -1,5 +1,5 @@
 [user]
-	email = ryan@wesselstudios.com
+	email = rwessel@dataminr.com
 	name = Ryan Wessel
 [alias]
 	a = add
@@ -17,39 +17,36 @@
 	b = branch
 	prune = git remote update origin --prune
 	resetLastCommit = reset --soft HEAD^
+        mr = "!f() { git fetch origin merge-requests/${1}/head:mr-${1} && git checkout mr-${1}; }; f"
+	
+	# Local Graph Log (Ex. 'git localGraph master' shows git log for only that branch)
+	# i.e. it will not show commits from branches that are merged into this one.
+	localGraph = "!f() { git log --graph --abbrev-commit --decorate  --first-parent ${1}; }; f"
+	
+	# Global Graph Log (Ex. 'git graph master' shows git log for that branch and all branches that are merged into master)
+	graph = "!f() { git log --graph --abbrev-commit --decorate ${1}; }; f"
+	
+	# Git Commit.
+	cap = "!f() { git commit -m \"$@\"; }; f"
 
+	# NEW.
+	new = "!f() { git cap \"📦 NEW: $@\"; }; f"
+	# IMPROVE.
+	imp = "!f() { git cap \"👌 IMPROVE: $@\"; }; f"
+	# FIX.
+	fix = "!f() { git cap \"🐛 FIX: $@\"; }; f"
+	# RELEASE.
+	rlz = "!f() { git cap \"🚀 RELEASE: $@\"; }; f"
+	# DOC.
+	doc = "!f() { git cap \"📖 DOC: $@\"; }; f"
+	# TEST.
+	tst = "!f() { git cap \"🤖 TEST: $@\"; }; f"
+	# BREAKING CHANGE.
+	brk = "!f() { git cap \"‼️ BREAKING: $@\"; }; f"
 
-	## Branching Visualization Shortcuts
-        # Local Graph Log
-	# (Ex. 'git localGraph master' shows git log for only that branch)
-        # i.e. it will not show commits from branches that are merged into this one.
-        localGraph = "!f() { git log --graph --abbrev-commit --decorate  --first-parent ${1}; }; f"
-        # Global Graph Log
-	# (Ex. 'git graph master' shows git log for that branch and all branches that are merged into master)
-        graph = "!f() { git log --graph --abbrev-commit --decorate ${1}; }; f"
-
-
-        ## Emoji-Log Functions (https://github.com/ahmadawais/Emoji-Log)
-        cap = "!f() { git commit -m \"$@\"; }; f"
-        # NEW.
-        new = "!f() { git cap \"📦  NEW: $@\"; }; f"
-        # IMPROVE.
-        imp = "!f() { git cap \"👌  IMPROVE: $@\"; }; f"
-        # FIX.
-        fix = "!f() { git cap \"🐛  FIX: $@\"; }; f"
-        # RELEASE.
-        rlz = "!f() { git cap \"🚀  RELEASE: $@\"; }; f"
-        # DOC.
-        doc = "!f() { git cap \"📖  DOC: $@\"; }; f"
-        # TEST.
-        tst = "!f() { git cap \"🤖  TEST: $@\"; }; f"
-        # BREAKING CHANGE.
-        brk = "!f() { git cap \"‼️ BREAKING: $@\"; }; f"	
-
-	## Contribution History Utilities 
-	# Find assignees for code review based on # of lines changed per author for all changed files in the current branch.	
+	# FIND ASSIGNEES BASED ON # OF LINES CHANGED PER AUTHOR FOR ALL FILES TOUCHED BY THE PROVIDED BRANCH.
 	assignees = "!f() { \
-		git diff --name-only $1 origin/master | \
+		git diff --name-only $1 origin/develop | \
 		xargs -n1 git blame --line-porcelain | \
 		grep \"^author \" | \
 		sort | \
@@ -57,16 +54,16 @@
 		sort -nr; \
 	}; f"
 
-	# Find line count per contributor excl. mocks and snapshot files in the src directory
+	# FIND COUNT OF LINES OF CODE PER PROJECT CONTRIBUTOR
 	contributors = "!f() { \
 		git ls-files -- 'src/*' ':!:src/__mocks__/*' ':!:.snap' | \
 		xargs -n1 git blame --line-porcelain | \
 		grep \"^author-mail \" | \
 		sort | uniq -c | sort -nr; \
 	}; f"
-
+	
 	# Delete local branches with remote branches that have been removed
-	pruneLocal = "!f() \
+	pruneLocal = "!f() { \
 		for branch in $( \
 			git for-each-ref --format '%(refname) %(upstream:track)' refs/heads | \
 			awk '$2 == "[gone]" {sub("refs/heads/", "", $1); print $1}' \
@@ -74,13 +71,14 @@
 		do \
 			git branch -D $branch; \
 		done \
-	]; f"
+	}; f"
 
 [core]
-	excludesfile = /Users/ryanwessel/.gitignore_global
+	excludesfile = /Users/rwessel/.gitignore_global
 	pager = cat
 [pager]
 	log = less
+	reflog = less
 [commit]
 	template = /Users/ryanwessel/.stCommitMsg
 [diff]
