@@ -3,20 +3,16 @@
 	name = Ryan Wessel
 [alias]
 	a = add
-	cfg = config
 	c = commit
-	ps = push
-	rb = rebase
-	mg = merge
-	ch = checkout
-	rs = reset
-	rl = reflog
 	s = status
-	cfg = config
 	f = fetch
 	b = branch
+	rb = rebase
+	ch = checkout
+	cfg = config
 	prune = git remote update origin --prune
 	resetLastCommit = reset --soft HEAD^
+
         mr = "!f() { git fetch origin merge-requests/${1}/head:mr-${1} && git checkout mr-${1}; }; f"
 	
 	# Local Graph Log (Ex. 'git localGraph master' shows git log for only that branch)
@@ -73,13 +69,3 @@
 		done \
 	}; f"
 
-[core]
-	excludesfile = /Users/rwessel/.gitignore_global
-	pager = cat
-[pager]
-	log = less
-	reflog = less
-[commit]
-	template = /Users/ryanwessel/.stCommitMsg
-[diff]
-	guitool = opendiff
