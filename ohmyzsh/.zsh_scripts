@@ -1,33 +1,8 @@
 good_morning() {
-	cd /Applications/ && open Google\ Chrome.app && open Slack.app && open Todoist.app && open Fyde.app && cd ~/_dev/react-mobile
+	cd /Applications/ && open Google\ Chrome.app && open Slack.app && open Notion.app && open Access.app && cd ~/_dev/react-mobile
 }
 
 init_branch() {
 	npm i && npm run install-native
 }
 
-rndebugger() {
-	open "rndebugger://set-debugger-loc?host=localhost&port=8081"
-}
-
-# place this after nvm initialization!
-autoload -U add-zsh-hook
-load-nvmrc() {
-  local node_version="$(nvm version)"
-  local nvmrc_path="$(nvm_find_nvmrc)"
-
-  if [ -n "$nvmrc_path" ]; then
-    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
-
-    if [ "$nvmrc_node_version" = "N/A" ]; then
-      nvm install
-    elif [ "$nvmrc_node_version" != "$node_version" ]; then
-      nvm use
-    fi
-  elif [ "$node_version" != "$(nvm version default)" ]; then
-    echo "Reverting to nvm default version"
-    nvm use default
-  fi
-}
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
