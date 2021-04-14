@@ -1,3 +1,5 @@
+.DS_Store
+
 # Ignore vim-plugin and installed vim dependencies
 vim/.vim/**/*
 !vim/.vimrc
