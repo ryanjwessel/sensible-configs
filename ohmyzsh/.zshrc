@@ -2,9 +2,6 @@
 export IDB_HOME=$HOME/Library/Python/3.8
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export GRADLE_HOME=/opt/gradle/gradle-5.5
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 eval "$(jenv init -)"
 
 export PATH="$HOME/.jenv/bin:$PATH"
@@ -20,7 +17,7 @@ export PATH=$PATH:$GRADLE_HOME/bin
 source ~/.zsh_scripts
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/ryanjwessel/.oh-my-zsh"
+export ZSH="/Users/rwessel/.oh-my-zsh"
 
 # History
 export HISTSIZE=25000
