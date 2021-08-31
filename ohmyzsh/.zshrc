@@ -13,9 +13,6 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$GRADLE_HOME/bin
 
-# Custom scripts
-source ~/.zsh_scripts
-
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/rwessel/.oh-my-zsh"
 
@@ -125,5 +122,6 @@ export PATH=$PATH:$HOME/.rvm/bin
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Requires installation of starship (https://starship.rs/guide/#%F0%9F%9A%80-installation)
 eval "$(starship init zsh)"
 

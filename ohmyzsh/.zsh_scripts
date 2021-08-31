@@ -1,8 +1,0 @@
-good_morning() {
-	cd /Applications/ && open Google\ Chrome.app && open Slack.app && open Notion.app && open Access.app && cd ~/_dev/react-mobile
-}
-
-init_branch() {
-	npm i && npm run install-native
-}
-
