@@ -1,0 +1,65 @@
+{
+  "name": "hyper-sync-settings",
+  "version": "3.1.0",
+  "description": "Sync Hyper settings with Github.",
+  "keywords": [
+    "hyperterm",
+    "hyper",
+    "sync",
+    "settings",
+    "backup",
+    "restore"
+  ],
+  "author": "Dylan Frankland <dylan@frankland.io>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfrankland/hyper-sync-settings.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dfrankland/hyper-sync-settings/issues"
+  },
+  "homepage": "https://github.com/dfrankland/hyper-sync-settings#readme",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "postinstall.ts",
+    ".babelrc.js"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
+    "pretty": "prettier --write ./**/*.{js,ts}",
+    "lint": "eslint --ext .ts --ext .js .",
+    "typecheck": "tsc -p ./tsconfig.json --noEmit",
+    "postinstall": "babel-node --extensions='.ts' ./postinstall.ts"
+  },
+  "dependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/node": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.4",
+    "dugite": "^1.87.3",
+    "fs-extra": "^8.1.0",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^8.0.1",
+    "@typescript-eslint/eslint-plugin": "^2.3.0",
+    "@typescript-eslint/parser": "^2.8.0",
+    "babel-eslint": "^10.0.3",
+    "electron": "^7.1.2",
+    "eslint": "^6.7.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.19.1",
+    "rollup": "^1.27.4",
+    "rollup-plugin-auto-external": "^2.0.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "typescript": "^3.7.2"
+  }
+}

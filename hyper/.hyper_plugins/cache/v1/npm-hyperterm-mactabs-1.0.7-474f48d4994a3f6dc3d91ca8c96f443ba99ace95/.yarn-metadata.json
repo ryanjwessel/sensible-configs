@@ -1,0 +1,40 @@
+{
+  "manifest": {
+    "name": "hyperterm-mactabs",
+    "version": "1.0.7",
+    "description": "Better tab styles for Hyper.app on macOS",
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "git+ssh://git@github.com/insanityfarm/hyperterm-mactabs.git"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": {
+      "name": "Parker Smith",
+      "email": "parker@insanityfarm.com"
+    },
+    "bugs": {
+      "url": "https://github.com/insanityfarm/hyperterm-mactabs/issues"
+    },
+    "license": "MIT",
+    "homepage": "https://github.com/insanityfarm/hyperterm-mactabs#readme",
+    "_registry": "npm",
+    "_loc": "/Users/rwessel/.hyper_plugins/cache/v1/npm-hyperterm-mactabs-1.0.7-474f48d4994a3f6dc3d91ca8c96f443ba99ace95/package.json",
+    "readmeFilename": "README.md",
+    "readme": "hyperterm-mactabs\n========================\n\nTab style enhancements for [Hyper.app] inspired by macOS, featuring subtle gradients, drop shadows, and the Lucida Grande typeface. Tab close buttons have been moved to the left side for consistency with other Mac programs. This plugin is intended to be compatible with other themes and will attempt to override any tab styles implemented by other plugins. It has only been tested on macOS and cannot be guaranteed to work on other platforms.\n\n![Screenshot](hyperterm-mactabs.png)\n\nHow to use\n----------\n\nAdd `hyperterm-mactabs` to `plugins` in `~/.hyper.js`. Hyper.app should automatically load the plugin. If it does not, perform a \"Full Reload\" for the change to take effect.\n\n[Hyper.app]: https://hyper.is/\n",
+    "licenseText": "The MIT License (MIT)\n\nCopyright (c) 2016 Parker Smith\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE\nOR OTHER DEALINGS IN THE SOFTWARE.\n\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/hyperterm-mactabs/-/hyperterm-mactabs-1.0.7.tgz#474f48d4994a3f6dc3d91ca8c96f443ba99ace95",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/hyperterm-mactabs/-/hyperterm-mactabs-1.0.7.tgz",
+    "hash": "474f48d4994a3f6dc3d91ca8c96f443ba99ace95",
+    "registry": "npm",
+    "packageName": "hyperterm-mactabs"
+  },
+  "registry": "npm",
+  "hash": "474f48d4994a3f6dc3d91ca8c96f443ba99ace95"
+}

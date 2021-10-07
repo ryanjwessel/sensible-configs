@@ -1,0 +1,44 @@
+{
+  "manifest": {
+    "name": "hyper-blink",
+    "version": "1.1.2",
+    "description": "Let Hyper's cursor blink.",
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/amio/hyper-blink.git"
+    },
+    "author": {
+      "name": "Amio",
+      "email": "amio.cn@gmail.com"
+    },
+    "license": "MIT",
+    "dependencies": {
+      "lodash.throttle": "^4.0.1"
+    },
+    "keywords": [
+      "hyper",
+      "hyperterm",
+      "hyper-plugin",
+      "hyperterm-plugin",
+      "plugin",
+      "cursor",
+      "blink"
+    ],
+    "_registry": "npm",
+    "_loc": "/Users/rwessel/.hyper_plugins/cache/v1/npm-hyper-blink-1.1.2-f804c9797a7c6ed53c02aa65b8487d19761fc72a/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# Hyper: Blink! [![npm-version][npm-badge]][npm-link]\n\nA living cursor blink, so here is this [Hyper](https://hyperterm.org) plugin, making it's cursor blink.\n\n![hyper-blink][screenshot]\n\n### Install\n\n1. Open Hyper's preferences with <kbd>Cmd</kbd> + <kbd>,</kbd> (or manually at `~/.hyper.js`) with your editor.\n2. Update your list of plugins to include `hyper-blink`, like so:\n\n  ```javascript\n  plugins: [\n    'hyper-blink'\n  ],\n  ```\n3. Fully reload Hyper (`Cmd + Shift + R`), and tada!\n\n### License\n\nMIT © [Amio][author]\n\n[screenshot]: https://cloud.githubusercontent.com/assets/215282/16899531/2cf309fe-4c3a-11e6-970e-9cc44c2fb500.gif\n[npm-badge]:  https://img.shields.io/npm/v/hyper-blink.svg?style=flat-square\n[npm-link]:   https://www.npmjs.com/package/hyper-blink\n[author]:     https://github.com/amio\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/hyper-blink/-/hyper-blink-1.1.2.tgz#f804c9797a7c6ed53c02aa65b8487d19761fc72a",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/hyper-blink/-/hyper-blink-1.1.2.tgz",
+    "hash": "f804c9797a7c6ed53c02aa65b8487d19761fc72a",
+    "registry": "npm",
+    "packageName": "hyper-blink"
+  },
+  "registry": "npm",
+  "hash": "f804c9797a7c6ed53c02aa65b8487d19761fc72a"
+}

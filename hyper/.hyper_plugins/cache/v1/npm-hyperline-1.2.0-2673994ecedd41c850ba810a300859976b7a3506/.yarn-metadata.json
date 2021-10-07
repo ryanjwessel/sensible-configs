@@ -1,0 +1,128 @@
+{
+  "manifest": {
+    "name": "hyperline",
+    "version": "1.2.0",
+    "description": "Handy status line for Hyper.app",
+    "keywords": [
+      "hyper.app",
+      "hyper",
+      "hyperterm"
+    ],
+    "author": {
+      "name": "Nick Tikhonov"
+    },
+    "contributors": [
+      {
+        "name": "Tim Neutkens"
+      },
+      {
+        "name": "Stefan Ivic"
+      },
+      {
+        "name": "Henrik Dahlheim"
+      }
+    ],
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/hyperline/hyperline.git"
+    },
+    "main": "dist/hyperline.js",
+    "files": [
+      "dist/hyperline.js"
+    ],
+    "dependencies": {
+      "color": "^0.11.3",
+      "git-state": "^4.0.0",
+      "json-loader": "^0.5.4",
+      "left-pad": "^1.1.3",
+      "moment": "^2.18.1",
+      "opencollective": "^1.0.3",
+      "prop-types": "^15.5.10",
+      "public-ip": "^2.0.1",
+      "spotify-node-applescript": "^1.1.0",
+      "styled-jsx": "2.2.6",
+      "systeminformation": "^3.4.1"
+    },
+    "devDependencies": {
+      "babel-core": "^6.11.4",
+      "babel-jest": "^20.0.3",
+      "babel-loader": "^6.2.4",
+      "babel-plugin-transform-object-rest-spread": "6.26.0",
+      "babel-preset-es2015": "^6.9.0",
+      "babel-preset-react": "^6.11.1",
+      "cross-env": "^3.1.4",
+      "eslint-config-prettier": "^2.3.0",
+      "eslint-config-xo-react": "^0.13.0",
+      "eslint-loader": "^1.5.0",
+      "eslint-plugin-react": "^7.1.0",
+      "jest": "^20.0.4",
+      "lint-staged": "^4.0.0",
+      "prettier": "^1.5.2",
+      "webpack": "2.2.0-rc.1",
+      "webpack-node-externals": "^1.3.3",
+      "xo": "^0.18.2",
+      "xo-loader": "^0.8.0"
+    },
+    "scripts": {
+      "build": "cross-env NODE_ENV=production webpack",
+      "dev": "webpack --watch",
+      "tdev": "jest --watch",
+      "test": "jest",
+      "precommit": "lint-staged",
+      "postinstall": "opencollective postinstall"
+    },
+    "xo": {
+      "ignores": [
+        "examples/**/*",
+        "node_modules/**/*"
+      ],
+      "extends": "prettier",
+      "rules": {
+        "import/no-extraneous-dependencies": 0,
+        "import/no-unresolved": 0,
+        "no-unused-vars": 0,
+        "import/order": 1,
+        "no-warning-comments": 0,
+        "prefer-promise-reject-errors": 0,
+        "import/named": 1,
+        "space-in-parens": 0,
+        "object-curly-spacing": 0,
+        "computed-property-spacing": 0,
+        "space-infix-ops": 0,
+        "one-var": 0,
+        "no-console": 0,
+        "no-useless-constructor": 1,
+        "no-useless-escape": 1
+      }
+    },
+    "lint-staged": {
+      "*.js": [
+        "npm run lint",
+        "prettier --single-quote --no-semi --write",
+        "jest"
+      ]
+    },
+    "collective": {
+      "type": "opencollective",
+      "url": "https://opencollective.com/hyperline",
+      "logo": "https://opencollective.com/opencollective/logo.txt"
+    },
+    "_registry": "npm",
+    "_loc": "/Users/rwessel/.hyper_plugins/cache/v1/npm-hyperline-1.2.0-2673994ecedd41c850ba810a300859976b7a3506/package.json",
+    "readmeFilename": "README.md",
+    "readme": "HyperLine\n=========\n\n**HyperLine is a status line plugin for [Hyper.app](https://hyper.is/)**. It shows you useful system information such as free memory, uptime and CPU usage.\n\n![Screenshot](./screenshot.png)\n\n## Install\n\n* **NOTE:** HyperLine is not currently supported when using Microsoft Windows. See [this issue](https://github.com/Hyperline/hyperline/issues/57) for additional information.\n\nTo install, edit `~/.hyper.js` and add `\"hyperline\"` to `plugins`:\n\n```\nplugins: [\n  \"hyperline\",\n],\n```\n\n## Styling the line\n\nWe implemented the same mechanism for styling/creating css classes that Hyper uses.\nThis will allow you to create custom HyperLine themes the same way you would create a Hyper css theme.\n\n## Configuring plugins\nAdd the names of plugins in the order in which you would like them to be displayed to your `~/.hyper.js`:\n\n```\nconfig: {                                                                      \n  hyperline: {                                                                 \n    plugins: [                                                                 \n      \"ip\",                                                                    \n      \"cpu\",                                                                   \n      \"spotify\"                                                                \n    ]                                                                          \n  },\n}\n```\nYou can see a list of all available plugins in [`src/lib/plugins/index.js`](https://github.com/Hyperline/hyperline/blob/master/src/lib/plugins/index.js)\n\n## Contributing\n\nFeel free to contribute to HyperLine by [requesting a feature](https://github.com/hyperline/hyperline/issues/new), [submitting a bug](https://github.com/hyperline/hyperline/issues/new) or contributing code.\n\nTo set up the project for development:\n\n1. Clone this repository into `~/.hyper_plugins/local/`\n2. Run `npm install` within the project directory\n3. Run `npm run build` to build the plugin **OR** `npm run dev` to build the plugin and watch for file changes.\n4. Add the name of the directory to `localPlugins` in `~/.hyper.js`.\n5. Reload terminal window\n\n## Authors\n\n- Nick Tikhonov [@nicktikhonov](https://github.com/nicktikhonov)\n- Tim Neutkens [@timneutkens](https://github.com/timneutkens)\n- Stefan Ivic [@stefanivic](https://github.com/stefanivic)\n- Henrik Dahlheim [@henrikdahl](https://github.com/henrikdahl)\n\n## Contributors\n\nThis project exists thanks to all the people who contribute.\n<a href=\"graphs/contributors\"><img src=\"https://opencollective.com/hyperline/contributors.svg?width=890\" /></a>\n",
+    "licenseText": "The MIT License (MIT)\n\nCopyright (c) 2016 Nick Tikhonov, Tim Neutkens\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/hyperline/-/hyperline-1.2.0.tgz#2673994ecedd41c850ba810a300859976b7a3506",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/hyperline/-/hyperline-1.2.0.tgz",
+    "hash": "2673994ecedd41c850ba810a300859976b7a3506",
+    "registry": "npm",
+    "packageName": "hyperline"
+  },
+  "registry": "npm",
+  "hash": "2673994ecedd41c850ba810a300859976b7a3506"
+}

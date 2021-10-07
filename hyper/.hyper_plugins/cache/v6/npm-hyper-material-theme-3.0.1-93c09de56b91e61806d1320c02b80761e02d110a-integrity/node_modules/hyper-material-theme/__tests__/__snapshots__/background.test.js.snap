@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Backgrounds should get the correct background (no opacity) 1`] = `"rgba(41, 45, 62, 1)"`;
+
+exports[`Backgrounds should get the correct background (no opacity) 2`] = `"rgba(33, 33, 33, 1)"`;
+
+exports[`Backgrounds should get the correct background (no opacity) 3`] = `"rgba(9, 11, 16, 1)"`;
+
+exports[`Backgrounds should get the correct background (no opacity) 4`] = `"rgba(38, 50, 56, 1)"`;
+
+exports[`Backgrounds should get the correct background (with opacity) 1`] = `"rgba(41, 45, 62, 0.8)"`;
+
+exports[`Backgrounds should get the correct background (with opacity) 2`] = `"rgba(33, 33, 33, 0.8)"`;
+
+exports[`Backgrounds should get the correct background (with opacity) 3`] = `"rgba(9, 11, 16, 0.8)"`;
+
+exports[`Backgrounds should get the correct background (with opacity) 4`] = `"rgba(38, 50, 56, 0.8)"`;

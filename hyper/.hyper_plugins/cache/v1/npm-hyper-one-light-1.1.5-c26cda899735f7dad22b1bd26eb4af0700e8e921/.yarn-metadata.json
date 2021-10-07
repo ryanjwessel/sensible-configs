@@ -1,0 +1,45 @@
+{
+  "manifest": {
+    "name": "hyper-one-light",
+    "version": "1.1.5",
+    "description": "Atom One Light theme for Hyper",
+    "main": "index.js",
+    "files": [
+      "index.js"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/andrepolischuk/hyper-one-light.git"
+    },
+    "keywords": [
+      "hyper",
+      "hyper-theme"
+    ],
+    "author": {
+      "name": "Andrey Polischuk",
+      "email": "me@andrepolischuk.com",
+      "url": "https://andrepolischuk.com"
+    },
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/andrepolischuk/hyper-one-light/issues"
+    },
+    "homepage": "https://github.com/andrepolischuk/hyper-one-light",
+    "_registry": "npm",
+    "_loc": "/Users/rwessel/.hyper_plugins/cache/v1/npm-hyper-one-light-1.1.5-c26cda899735f7dad22b1bd26eb4af0700e8e921/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# hyper-one-light\n\n> [Atom One Light][one-light] theme for [Hyper][hyper]\n\n![](screenshot.png)\n\n## Install\n\nOpen your Hyper preferences and add `hyper-one-light` to plugin list:\n\n```js\nplugins: [\n  'hyper-one-light'\n],\n```\n\n## Vibrancy\n\n![](screenshot-vibrancy.png)\n\nAdd follows line to config for enable the light vibrancy effect:\n\n```js\nenableVibrancy: true\n```\n\n## Highlight active pane\n\n[hyper-simple-highlight-active-session][] works perfectly fine to highlight active pane.\n\n[hyper-simple-highlight-active-session]: https://github.com/matheuss/hyper-simple-highlight-active-session\n\n\n## Tips\n\nIn the screenshot hyper-one-light is running with [min][min] prompt and Menlo font.\n\nTo colorize commands as in the screenshot, install [zsh-syntax-highlighting][zsh-syntax-highlighting].\n\n## License\n\nMIT\n\n[one-light]: https://github.com/atom/one-light-syntax\n[hyper]: https://hyper.is\n[min]: https://github.com/andrepolischuk/min\n[zsh-syntax-highlighting]: https://github.com/zsh-users/zsh-syntax-highlighting\n",
+    "licenseText": "The MIT License (MIT)\n\nCopyright (c) Andrey Polischuk <me@andrepolischuk.com> (https://andrepolischuk.com)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/hyper-one-light/-/hyper-one-light-1.1.5.tgz#c26cda899735f7dad22b1bd26eb4af0700e8e921",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/hyper-one-light/-/hyper-one-light-1.1.5.tgz",
+    "hash": "c26cda899735f7dad22b1bd26eb4af0700e8e921",
+    "registry": "npm",
+    "packageName": "hyper-one-light"
+  },
+  "registry": "npm",
+  "hash": "c26cda899735f7dad22b1bd26eb4af0700e8e921"
+}
