@@ -69,3 +69,5 @@
 		done \
 	}; f"
 
+[fetch]
+	prune = true
