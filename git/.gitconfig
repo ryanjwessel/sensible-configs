@@ -68,6 +68,7 @@
 			git branch -D $branch; \
 		done \
 	}; f"
+	please = push --force-with-lease
 
 [fetch]
 	prune = true
