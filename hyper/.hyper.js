@@ -14,7 +14,7 @@ module.exports = {
         letterSpacing: 0,
         cursorShape: 'BLOCK',
         cursorBlink: true,
-        padding: '12px 14px',
+        padding: '14px',
         colors: {
             black: '#000000',
             red: '#C51E14',
