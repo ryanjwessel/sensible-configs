@@ -7,7 +7,8 @@ function install_homebrew_dependencies() {
     eval "$(/opt/homebrew/bin/brew shellenv)"
   fi
 
-  brew install --quiet --cask authy rectangle visual-studio-code spotify android-studio notion hyper || true
+  brew tap homebrew/cask-fonts || true
+  brew install --quiet --cask authy rectangle visual-studio-code spotify android-studio notion hyper font-Ubuntu-nerd-font || true
   brew install --quiet vim git nodenv rbenv jenv react-native-debugger || true
 }
 
