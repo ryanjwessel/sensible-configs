@@ -9,7 +9,7 @@ function install_homebrew_dependencies() {
 
   brew tap homebrew/cask-fonts || true
   brew install --quiet --cask authy rectangle visual-studio-code spotify android-studio notion hyper font-ubuntu-mono-nerd-font || true
-  brew install --quiet vim git nodenv rbenv jenv react-native-debugger starship zsh-autosuggestions zsh-syntax-highlighting || true
+  brew install --quiet vim git nodenv rbenv jenv react-native-debugger starship || true
 }
 
 install_homebrew_dependencies
