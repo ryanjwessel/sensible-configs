@@ -8,3 +8,5 @@ plugins=(
   zsh-syntax-highlighting
   zsh-autosuggestions
 )
+
+eval "$(starship init zsh)"
