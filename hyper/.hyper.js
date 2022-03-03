@@ -41,5 +41,6 @@ module.exports = {
         disableAutoUpdates: false,
     },
     plugins: ["hypercwd", "hyper-search", "hyper-material-theme", "hyper-tabs-enhanced"],
+    scrollback: 5000,
 };
 //# sourceMappingURL=config-default.js.map
