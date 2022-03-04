@@ -39,8 +39,8 @@ module.exports = {
         webGLRenderer: false,
         disableLigatures: false,
         disableAutoUpdates: false,
+        scrollback: 10000,
     },
     plugins: ["hypercwd", "hyper-search", "hyper-material-theme", "hyper-tabs-enhanced"],
-    scrollback: 5000,
 };
 //# sourceMappingURL=config-default.js.map
