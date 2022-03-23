@@ -13,3 +13,4 @@ function install_homebrew_dependencies() {
 }
 
 install_homebrew_dependencies
+cp ./.rndebuggerrc ~/.rndebuggerrc
