@@ -40,7 +40,14 @@ module.exports = {
         disableLigatures: false,
         disableAutoUpdates: false,
         scrollback: 10000,
+        showWindowControls: 'left',
     },
-    plugins: ["hypercwd", "hyper-search", "hyper-material-theme", "hyper-tabs-enhanced"],
+    plugins: [
+	"hypercwd",
+	"hyper-search",
+	"hyper-material-theme",
+	"hyper-tabs-enhanced",
+	"hyper-mac-controls",
+    ],
 };
 //# sourceMappingURL=config-default.js.map
