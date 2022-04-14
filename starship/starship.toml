@@ -1,9 +1,9 @@
 # This file belongs in ~/.config/starship.toml
 
-command_timeout = 1000
+command_timeout = 2000
 
 [character]
-success_symbol = "⚡️"
+format = "⚡️"
 
 [java]
 format = "via [☕️ $version](bold red) "
