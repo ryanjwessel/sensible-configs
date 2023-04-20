@@ -13,3 +13,5 @@ fi
 rm -f ~/.zshrc
 CURR_DIR=$( cd "$(dirname "$0")" ; pwd -P )
 cp "${CURR_DIR}/.zshrc" ~/.zshrc
+
+echo "Installed Oh My Zsh and desired plugins."
