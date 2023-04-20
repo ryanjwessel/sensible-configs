@@ -1,2 +1,1 @@
 cp ./.gitconfig ~/.gitconfig
-

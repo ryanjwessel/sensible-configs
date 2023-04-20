@@ -1,1 +1,1 @@
-cp ./starship.toml ~/.config/starship.toml
+starship preset plain-text-symbols -o ~/.config/starship.toml
