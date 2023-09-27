@@ -8,6 +8,8 @@
 	ch = checkout
 	prune = git remote update origin --prune
 	please = push --force-with-lease
+	freeze = update-index --assume-unchanged
+	thaw = update-index --no-assume-unchanged
 
 [fetch]
 	prune = true
