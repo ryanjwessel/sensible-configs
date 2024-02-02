@@ -5,7 +5,7 @@ if ! which brew &>/dev/null; then
 fi
 
 brew tap homebrew/cask-fonts || true
-brew install --quiet --cask authy rectangle visual-studio-code spotify android-studio notion slack font-ubuntu-mono-nerd-font postman || true
-brew install --quiet vim git nodenv rbenv jenv react-native-debugger starship jq bat lsd fd hyperfine git-delta yarn ffmpeg imagemagick || true
+brew install --quiet --cask android-studio authy font-ubuntu-mono-nerd-font notion postman rectangle slack spotify visual-studio-code || true
+brew install --quiet bat fd ffmpeg git git-delta hyperfine imagemagick jenv jq lsd nodenv rbenv react-native-debugger starship vim yarn || true
 
 echo "Installed Homebrew dependencies."
