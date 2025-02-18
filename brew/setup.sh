@@ -34,7 +34,11 @@ dependencies=(
   yarn
 )
 
-brew install --quiet --cask "${cask_dependencies[@]}" || true
-brew install --quiet "${dependencies[@]}" || true
-
-echo "Installed Homebrew dependencies."
+{
+  brew install --quiet --cask "${cask_dependencies[@]}" && \
+  brew install --quiet "${dependencies[@]}" && \
+  echo "Installed Homebrew dependencies."
+} || {
+  echo "Error: Failed to install some Homebrew dependencies"
+  exit 1
+}
