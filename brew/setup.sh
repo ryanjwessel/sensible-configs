@@ -5,19 +5,15 @@ if ! which brew &>/dev/null; then
 fi
 
 cask_dependencies=(
-  android-studio
   copilot
-  cursor
   font-ubuntu-mono-nerd-font
   notion
   postman
   raycast
-  readdle-spark
   rectangle
   slack
   spotify
   visual-studio-code
-  warp
 )
 
 dependencies=(
