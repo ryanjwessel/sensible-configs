@@ -7,6 +7,7 @@ fi
 cask_dependencies=(
   copilot
   font-ubuntu-mono-nerd-font
+  ghostty
   notion
   postman
   raycast
